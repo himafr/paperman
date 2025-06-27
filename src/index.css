@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+    --color-gray:#F5F5F5;
+    --color-secondary:#FC4308;
+    --color-black50:#3E3232;
+}
+.my-icon{
+    @apply rounded-xl w-12 h-12
+}
