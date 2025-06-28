@@ -1,6 +1,6 @@
 function HomePage() {
     return (
-        <div>
+        <div className="px-14">
             home
         </div>
     )

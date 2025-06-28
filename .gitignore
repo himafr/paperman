@@ -22,5 +22,4 @@ dist-ssr
 *.sln
 *.sw?
 
-public/images/avatar/11.png
-public/images/avatar/12.png
+public/images/out

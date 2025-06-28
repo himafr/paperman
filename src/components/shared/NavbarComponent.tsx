@@ -4,7 +4,7 @@ import { NavLink } from "react-router";
 
 function NavbarComponent() {
   return (
-    <div className="flex justify-between pt-3">
+    <div className="flex justify-between pt-3 px-14">
       <div className="flex justify-between gap-17 items-center">
         <div className="font-bold text-secondary text-2xl">PAPER.man</div>
 <style>
