@@ -1,7 +1,9 @@
+import CatList from "../components/home/CatList"
+
 function HomePage() {
     return (
         <div className="px-14">
-            home
+          <CatList heading="Top Posts" />
         </div>
     )
 }

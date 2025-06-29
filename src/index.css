@@ -1,5 +1,8 @@
 @import "tailwindcss";
-
+@font-face {
+    font-family: "Roboto";
+    src: url("./assets/Roboto/Roboto-VariableFont_wdth\,wght.ttf") format("truetype");
+}
 @theme {
     --color-gray:#F5F5F5;
     --color-secondary:#FC4308;
@@ -9,13 +12,24 @@
     --color-primary:#F81539;
 
 }
+body{
+  font-family: "Roboto";
+  font-weight: 500;
+}
 .my-icon{
     @apply rounded-xl w-12 h-12
 }
 .paragraph{
-    @apply text-sm text-black75
+    @apply text-sm text-black75 leading-5
 }
 .h4{
     @apply font-medium text-xl text-black
     
+}
+.h5{
+    @apply font-medium  text-black
+    
+}
+::-webkit-scrollbar{
+    display: none;
 }

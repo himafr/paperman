@@ -1,8 +1,9 @@
-import { FaArrowDown, FaChevronDown, FaSearch } from "react-icons/fa";
-import { IoBookmarkOutline } from "react-icons/io5";
-import { NavLink } from "react-router";
+import {  FaChevronDown, FaSearch } from "react-icons/fa";
+import { FiBookmark } from "react-icons/fi";
+import { NavLink, useNavigate } from "react-router";
 
 function NavbarComponent() {
+  const navigate=useNavigate();
   return (
     <div className="flex justify-between pt-3 px-14">
       <div className="flex justify-between gap-17 items-center">
@@ -22,12 +23,19 @@ function NavbarComponent() {
 </style>
         <ul className="flex gap-9" id="navUl">
           <li>
-            <NavLink to=""> Categories </NavLink>
-            <FaChevronDown color="#3E3232" />
+            <select onChange={(e)=>navigate(e.target.value)} >
+              <option  value=""> 
+             Categories 
+              </option>
+              <option  value="/"> 
+             Cate 
+              </option>
+            </select>
           </li>
           <li>
             <NavLink to=""> Pages </NavLink>
             <FaChevronDown color="#3E3232" />
+            
           </li>
           <li>
             <NavLink to=""> Contact Us </NavLink>
@@ -56,7 +64,8 @@ function NavbarComponent() {
             <FaChevronDown color="#3E3232" className="cursor-pointer"/>
           </div>
           <div className="flex items-center justify-center bg-gray my-icon cursor-pointer">
-            <IoBookmarkOutline  />
+                               <FiBookmark size={25}  />
+           
           </div>
         </div>
       </div>

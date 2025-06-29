@@ -1,5 +1,6 @@
 import { FaSearch } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import HeadingComponent from "./HeadingComponent";
 
 export default function FooterComponent() {
   const categories = [
@@ -23,9 +24,7 @@ export default function FooterComponent() {
       <div className="bg-gray rounded-tr-[50px] rounded-br-[50px] w-2/4 p-12">
         <div className="grid grid-cols-3  gap-x-16 pl-16">
           <div className="col-span-2">
-            <div className="h4 flex items-center gap-1.5 pb-5">
-                <div className="bg-primary w-1 h-2 rounded-xl "></div>
-                 Paper </div>
+              <HeadingComponent text="Paper" />
             <p className="paragraph pb-5">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -37,8 +36,7 @@ export default function FooterComponent() {
             </p>
           </div>
           <div>
-            <h2 className="text-xl font-semibold mb-4 flex items-center gap-1.5"> 
-                <div className="bg-primary w-1 h-2 rounded-xl "></div>Categories</h2>
+              <HeadingComponent text="Categories" />
             <ul className="space-y-2">
               {categories.map((cat) => (
                 <li
@@ -52,10 +50,7 @@ export default function FooterComponent() {
           </div>
 
           <div className="col-span-2">
-            <div className="h4 flex items-center gap-1.5 pb-5">
-                <div className="bg-primary w-1 h-2 rounded-xl ">    
-                </div>
-                Newsletters</div>
+              <HeadingComponent text="Newsletters" />
             <div className="flex items-center ">
               <input
                 type="text"
@@ -70,19 +65,13 @@ export default function FooterComponent() {
             </div>
           </div>
 
-            <div className="h4 flex items-center gap-1.5 ">
-                <div className="bg-primary w-1 h-2 rounded-xl ">
-                </div>
-                Social Network
-                </div>
+      <HeadingComponent text="  Social Network" />
         </div>
       </div>
 
       {/* Comments */}
       <div>
-        <div className="h4 flex items-center gap-1.5 mb-4">
-                <div className="bg-primary w-1 h-2 rounded-xl "></div>
-            New Comments</div>
+      <HeadingComponent text=" New Comments" />
         <ul className="text-sm space-y-2">
           {comments.map(({ user, post }) => (
               <li key={`${user}-${post}`} className="bg-gray rounded-xl p-4">
@@ -95,9 +84,7 @@ export default function FooterComponent() {
 
       {/* Instagram Grid */}
       <div className="pr-2.5">
-          <div className="h4 flex items-center gap-1.5 mb-4">
-                <div className="bg-primary w-1 h-2 rounded-xl "></div>
-            Follow On Instagram</div>
+          <HeadingComponent text="Follow On Instagram"/>
         <div className="grid grid-cols-3 gap-2">
             <img
               className="bg-gray-200 rounded h-[104px] w-[104px] object-cover "
