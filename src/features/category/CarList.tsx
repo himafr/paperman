@@ -2,8 +2,8 @@ import CardComponent from "../post/CardComponent"
 import HeadingComponent from "../../ui/HeadingComponent"
 import type { PostTypes } from "../../types"
 
-function CatList({heading}:{category?:string,heading:string}) {
-    const data:PostTypes["post"][]=[
+function CatList({heading,land}:{category?:string,heading:string ;land?:boolean}) {
+    const data:PostTypes[]=[
         {
             postPhoto:"/images/sport/01.png",
             userPhoto:"images/avatar/12.png"
@@ -24,8 +24,8 @@ function CatList({heading}:{category?:string,heading:string}) {
     return (
          <section className="my-20">
             <HeadingComponent text={heading}/>
-            <div className="flex gap-6 overflow-x-auto py-5">
-                {data.map((el)=><CardComponent post={el} />
+            <div className={land?"grid gap-6 grid-cols-2 py-5":"flex gap-6 overflow-x-auto py-5"}>
+                {data.map((el)=><CardComponent land={land} post={el} />
                 )}
             </div>
            </section>
