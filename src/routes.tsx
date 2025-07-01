@@ -1,7 +1,8 @@
 import { createBrowserRouter } from "react-router";
 import AppLayout from "./ui/AppLayout";
-import HomePage from "./ui/HomePage";
+import HomePage from "./pages/HomePage";
 import NotFoundPage from "./ui/NotFoundPage";
+import PostPage from "./pages/PostPage";
 
 const router = createBrowserRouter([
   {
@@ -11,6 +12,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <HomePage />,
+      },
+      {
+        path:"Post/:id",
+        element: <PostPage />,
       },
     ],
   },

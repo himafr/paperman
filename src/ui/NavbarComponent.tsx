@@ -59,7 +59,7 @@ function NavbarComponent() {
         </div>
         <div className="flex gap-2.5">
           <div className="flex gap-3.5 items-center">
-            <img src="images/avatar/13.png" className="my-icon " alt="" />
+            <img src="/images/avatar/13.png" className="my-icon " alt="" />
             hema
             <FaChevronDown color="#3E3232" className="cursor-pointer"/>
           </div>

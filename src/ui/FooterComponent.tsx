@@ -89,49 +89,49 @@ export default function FooterComponent() {
             <img
               className="bg-gray-200 rounded h-[104px] w-[104px] object-cover "
               title={`Instagram placeholder`}
-              src="images/car/02.png"
+              src="/images/car/02.png"
             />
             <img
               className="bg-gray-200 rounded h-[104px] w-[104px] object-cover "
               title={`Instagram placeholder`}
-              src="images/animal/10.png"
+              src="/images/animal/10.png"
             />
              <img
               className="bg-gray-200 rounded h-[104px] w-[104px] object-cover "
               title={`Instagram placeholder`}
-              src="images/technology/02.png"
+              src="/images/technology/02.png"
             />
             <img
               className="bg-gray-200 rounded h-[104px] w-[104px] object-cover "
               title={`Instagram placeholder`}
-              src="images/food/07.png"
+              src="/images/food/07.png"
             />
             <img
               className="bg-gray-200 rounded h-[104px] w-[104px] object-cover "
               title={`Instagram placeholder`}
-              src="images/music/01.png"
+              src="/images/music/01.png"
             />
 
             <img
               className="bg-gray-200 rounded h-[104px] w-[104px] object-cover "
               title={`Instagram placeholder`}
-              src="images/dance/03.png"
+              src="/images/dance/03.png"
             />
             
             <img
               className="bg-gray-200 rounded h-[104px] w-[104px] object-cover "
               title={`Instagram placeholder`}
-              src="images/animal/07.png"
+              src="/images/animal/07.png"
             />
             <img
               className="bg-gray-200 rounded h-[104px] w-[104px] object-cover "
               title={`Instagram placeholder`}
-              src="images/dance/01.png"
+              src="/images/dance/01.png"
             />
             <img
               className="bg-gray-200 rounded h-[104px] w-[104px] object-cover "
               title={`Instagram placeholder`}
-              src="images/sport/02.png"
+              src="/images/sport/02.png"
             />
            
         </div>
