@@ -3,6 +3,7 @@ import AppLayout from "./ui/AppLayout";
 import HomePage from "./pages/HomePage";
 import NotFoundPage from "./ui/NotFoundPage";
 import PostPage from "./pages/PostPage";
+import WriterPage from "./pages/WriterPage";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
       {
         path:"Post/:id",
         element: <PostPage />,
+      },
+      {
+        path:"writer/:id",
+        element: <WriterPage />,
       },
     ],
   },
